@@ -1,0 +1,67 @@
+
+:root {
+
+	--calcbg: hsl(223, 31%, 20%);
+
+	--keybg: hsl(30, 25%, 89%);
+	--keysh : hsl(28, 16%, 65%);
+
+	--delbg: hsl(225, 21%, 49%);
+	--delsh: hsl(224, 28%, 35%);
+
+	--eqbg: hsl(6, 63%, 50%);
+	--eqsh: hsl(6, 70%, 34%);
+
+}
+
+.calc_container{
+	display: grid;
+	
+	grid-template-rows: 50px 50px 50px 50px;
+	grid-template-columns: 80px 80px 80px 80px;
+
+	gap:0.6em;
+	
+	justify-content: center;
+	align-items: center;
+
+	padding: 1.5em;
+
+}
+
+.default_calc{
+	background-color: var(--calcbg);
+	border-radius: 5px;
+}
+
+.calc_container .num{
+	padding:0.7em;
+	border-radius: 0.5em;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+.calc_container .default{
+	background-color: var(--keybg);
+	box-shadow: 0px 4px 0px var(--keysh);
+
+}
+
+.calc_container .del_default , .calc_container .res_default{
+	color: white;
+	background-color: var(--delbg);
+	box-shadow: 0px 4px 0px var(--delsh);
+}
+
+.calc_container .res_default{
+	grid-column: 1/span 2;
+}
+
+.calc_container .equ_default{
+	grid-column: 3/span 2;
+	color: white;
+	background-color: var(--eqbg);
+	box-shadow: 0px 4px 0px var(--eqsh);
+
+}
