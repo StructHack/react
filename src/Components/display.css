@@ -1,7 +1,5 @@
 .display{
 	color:white;
-	background-color: hsl(224, 36%, 15%);
-
 	text-align: right;
 	
 	font-weight: bold;
@@ -11,4 +9,13 @@
 	margin-bottom: 0.6em;
 
 	border-radius: 5px;
+}
+
+.default_display{
+	background-color: hsl(224, 36%, 15%);
+}
+
+.style_2_display{
+	background-color: hsl(0, 0%, 90%);
+	color:black;
 }

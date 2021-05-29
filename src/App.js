@@ -8,13 +8,14 @@ import Slider from './Slider'
 function App() {
 
 	const[num, setNum] = useState(0);
+	const [thNum, setthNum] = useState(['default','del_default', 'res_default', 'equ_default']);
   return (
   		<div className="App">
   			<div className="calc">
   				<div>
-  					<Slider />
-	  				<Display value={num}/>
-	  				<Calculator num={num} setNum={setNum}/>
+  					<Slider thNum={thNum} setthNum={setthNum} />
+	  				<Display value={num} thNum={thNum}/>
+	  				<Calculator num={num} setNum={setNum} thNum={thNum}/>
   				</div>
   			</div>
   		</div>

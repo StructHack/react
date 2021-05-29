@@ -3,9 +3,9 @@ import './display.css';
 
 
 function Display(props){
-	const {value} = props;
+	const {value,thNum} = props;
 	return(
-		<div className="display">
+		<div className={`display ${thNum[0]}_display`}>
 		{
 			props.value
 		}

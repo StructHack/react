@@ -1,8 +1,15 @@
+
 .slider_container{
 	display:flex;
 
 }
 
+.slider_container .num{
+	font-size: 0.6em;
+	letter-spacing: 0.4em;
+	text-align: center;
+	font-weight: bold;
+}
 .slider_container div:first-child{
 	margin-right: auto;
 }

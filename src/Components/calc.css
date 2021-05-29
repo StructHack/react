@@ -12,6 +12,17 @@
 	--eqbg: hsl(6, 63%, 50%);
 	--eqsh: hsl(6, 70%, 34%);
 
+	--calcbg2:hsl(0, 5%, 81%);
+
+	--keybg2: hsl(45, 7%, 89%);
+	--keysh2: hsl(35, 11%, 61%);
+
+	--delbg2:hsl(185, 42%, 37%);
+	--delsh2:hsl(185, 58%, 25%);
+
+	--eqbg2: hsl(25, 98%, 40%);
+	--eqsh2: hsl(25, 99%, 27%);
+
 }
 
 .calc_container{
@@ -29,11 +40,7 @@
 
 }
 
-.default_calc{
-	background-color: var(--calcbg);
-	border-radius: 5px;
-}
-
+/*default style begins here*/
 .calc_container .num{
 	padding:0.7em;
 	border-radius: 0.5em;
@@ -41,6 +48,12 @@
 	text-align: center;
 	cursor: pointer;
 }
+
+.default_calc{
+	background-color: var(--calcbg);
+	border-radius: 5px;
+}
+
 
 .calc_container .default{
 	background-color: var(--keybg);
@@ -63,5 +76,35 @@
 	color: white;
 	background-color: var(--eqbg);
 	box-shadow: 0px 4px 0px var(--eqsh);
+
+}
+/*default style ends here*/
+
+.style_2_calc{
+	background-color: var(--calcbg2);
+	border-radius: 5px;
+}
+
+.calc_container .style_2{
+	background-color: var(--keybg2);
+	box-shadow: 0px 4px 0px var(--keysh2);
+
+}
+
+.calc_container .del_style_2 , .calc_container .res_style_2{
+	color: white;
+	background-color: var(--delbg2);
+	box-shadow: 0px 4px 0px var(--delsh2);
+}
+
+.calc_container .res_style_2{
+	grid-column: 1/span 2;
+}
+
+.calc_container .equ_style_2{
+	grid-column: 3/span 2;
+	color: white;
+	background-color: var(--eqbg2);
+	box-shadow: 0px 4px 0px var(--eqsh2);
 
 }
