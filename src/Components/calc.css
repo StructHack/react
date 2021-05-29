@@ -23,6 +23,17 @@
 	--eqbg2: hsl(25, 98%, 40%);
 	--eqsh2: hsl(25, 99%, 27%);
 
+	--calcbg3:hsl(268, 71%, 12%);
+
+	--delbg3: hsl(281, 89%, 26%);
+	--delsh3: hsl(285, 91%, 52%);
+
+	--keybg3: hsl(268, 47%, 21%);
+	--keysh3: hsl(290, 70%, 36%);
+
+	--eqbg3: hsl(176, 100%, 44%);
+	--eqsh3: hsl(177, 92%, 70%);
+
 }
 
 .calc_container{
@@ -51,6 +62,7 @@
 
 .default_calc{
 	background-color: var(--calcbg);
+	color: hsl(221, 14%, 31%);
 	border-radius: 5px;
 }
 
@@ -82,6 +94,7 @@
 
 .style_2_calc{
 	background-color: var(--calcbg2);
+	color:hsl(60, 10%, 19%);
 	border-radius: 5px;
 }
 
@@ -106,5 +119,36 @@
 	color: white;
 	background-color: var(--eqbg2);
 	box-shadow: 0px 4px 0px var(--eqsh2);
+
+}
+
+/**/
+.style_3_calc{
+	background-color: var(--calcbg3);
+	border-radius: 5px;
+	color:hsl(52, 100%, 62%);
+}
+
+.calc_container .style_3{
+	background-color: var(--keybg3);
+	box-shadow: 0px 4px 0px var(--keysh3);
+
+}
+
+.calc_container .del_style_3 , .calc_container .res_style_3{
+	color: white;
+	background-color: var(--delbg3);
+	box-shadow: 0px 4px 0px var(--delsh3);
+}
+
+.calc_container .res_style_3{
+	grid-column: 1/span 2;
+}
+
+.calc_container .equ_style_3{
+	grid-column: 3/span 2;
+	color: white;
+	background-color: var(--eqbg3);
+	box-shadow: 0px 4px 0px var(--eqsh3);
 
 }

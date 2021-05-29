@@ -1,3 +1,30 @@
+html, 
+body{
+    height: 100%;
+}
+body{
+	overflow: hidden;
+}
+
+.App{
+	min-height: 1000px;
+}
+
+.app_default{
+	background-color: hsl(222, 26%, 31%);
+	color: white;
+}
+
+.app_style_2{
+	background-color: hsl(0, 0%, 93%);
+	color:hsl(60, 10%, 19%);
+}
+
+.app_style_3{
+	background-color: hsl(268, 75%, 9%);
+	color: hsl(52, 100%, 62%);
+}
+
 .calc{
 	display: flex;
 	flex-direction: column;

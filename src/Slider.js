@@ -24,7 +24,7 @@ function Slider(props){
 				<div>Calc</div>
 				<div>
 				<div className="num">1 2 3</div>
-				<div className="slider default" id={theme.toString()} onClick={()=>{setTheme((prev)=>{return (prev==3) ? 1 : theme+1 })}}>
+				<div className={`slider_${thNum[0]}`} id={theme.toString()} onClick={()=>{setTheme((prev)=>{return (prev==3) ? 1 : theme+1 })}}>
 				</div>
 				</div>
 			</div>

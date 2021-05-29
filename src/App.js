@@ -10,7 +10,7 @@ function App() {
 	const[num, setNum] = useState(0);
 	const [thNum, setthNum] = useState(['default','del_default', 'res_default', 'equ_default']);
   return (
-  		<div className="App">
+  		<div className={`App app_${thNum[0]}`} >
   			<div className="calc">
   				<div>
   					<Slider thNum={thNum} setthNum={setthNum} />
